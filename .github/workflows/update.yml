@@ -4,7 +4,7 @@ name: Update Steam app database
 
 on:
   schedule:
-    - cron: "17 */7 * * *" # every 7 hours (minute 17 to dodge top-of-hour congestion)
+    - cron: "17 */2 * * *"
   workflow_dispatch:
     inputs:
       scan_to:
@@ -18,7 +18,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

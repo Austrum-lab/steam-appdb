@@ -14,8 +14,8 @@ that data public and fresh.
 
 ## How it updates
 
-`.github/workflows/update.yml` runs the pipeline **every 7 hours** (cron
-`17 */7 * * *`, plus manual `workflow_dispatch`):
+`.github/workflows/update.yml` runs the pipeline **every 2 hours** (cron
+`17 */2 * * *`, plus manual `workflow_dispatch`):
 
 1. checkout + `pip install -r requirements.txt`;
 2. `python dump_applist.py --data-dir data` — anonymous PICS login, asks the

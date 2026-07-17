@@ -72,6 +72,7 @@ data/                         generated:
 ## Wiring into gamefetcher
 
 https://github.com/Austrum-lab/game-fetcher-cli
+
 Point at the installable subset (single URL, classic GetAppList shape), or at
 individual per-type files — both shapes are parsed:
 
